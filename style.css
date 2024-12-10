@@ -6,8 +6,56 @@
     /* font-family: "Rubik Bubbles"; */
     text-decoration: none;
 }
+/* ==============header====================  */
 header{
+    top: 0;
+    background-color:#97d700;
+    height: 100px;
+    width: 100%;
+    align-items: center;
     display: grid;
+    justify-content:space-evenly;
+    position: fixed;
+    grid-template-columns: 200px  600px 10px;
+}
+h1{
+    color: white;
+    /* cursor: pointer; */
+    font-weight: 900;
+}
+.heder_class{
+    /* background: #000; */
+    display: flex;
+      font-size: 20px;
+    padding: 2px;
     
-    grid-template-columns: auto auto auto auto;
+}
+.heder_class p{
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 52px;
+}
+.heder_class a{
+    font-weight: 700;
+    color: black;
+}
+header i {
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* ===================main============ */
+main{
+    margin-top: 120px;
+    width: 100%;
+    margin-left: 184px;
+}
+main h2{
+    font-size: 40px;
+    color: rgba(0, 0, 255, 0.656);
+}
+.main_class1 p{
+    font-size: 20px;
+    margin-top: 2px;
+    font-weight: 700;
 }
