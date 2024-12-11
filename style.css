@@ -67,14 +67,15 @@ main h2{
     font-weight: 700;
 }
 .main_lokation{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content:space-evenly;
     width: 100%;
     /* background-color: #97d700; */
 }
 .Button_class{
     margin-top: 80px;
-    margin-left: 53px;
+    /* margin-left: 53px; */
     background-color: white;
     width: 260px;
     height: 80px;
@@ -112,8 +113,15 @@ main h2{
  /* =========section=========== */
  section{
     width: 100%;
-    height:700px;
-    padding: 0px 139px 0px 180px;
+    height:800px;
+    /* padding: 0px 139px 0px 180px; */
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content:space-evenly;
+    align-items: center;
+ }
+ .section_class{
+    margin-left: 20px;
  }
  .section_class h3{
     font-size: 42px;
@@ -127,8 +135,35 @@ main h2{
  }
  .section_jaoylashuv{
     display: grid;
-    background-color: aliceblue;
+    margin-top: 50px;
    width: 100%;
-   height: 500px;
+   height: 100%;
+   /* background-color: aqua; */
    grid-template-columns: auto auto auto;
+   justify-content: center;
+   align-items: center;
+ }
+ .xizmat {
+    background-color: white;
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Kuchli va aniqlangan soya */
+}
+
+ .xizmat i{
+    font-size: 70px;
+    margin: 30px 30px 30px 30px;
+    color: #18aaf2;
+ }
+ .xizmat h4{
+    font-size: 26px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+ }
+ .xizmat p{
+    margin: 30px;
+    font-size: 18px;
+    /* background-color: #97d700; */
  }
