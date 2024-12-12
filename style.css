@@ -112,10 +112,11 @@ main h2{
     cursor: pointer;
  }
  .viloytlar_class{
-    width: 900px;
+    width: 990px;
+    padding: 15px;
     margin-left: 19%;
-    height: 500px;
-    background-color: white;
+    height: 400px;
+    background-color:#f5f8fa;
     /* position:absolute; */
     border-radius: 20px;
  }
@@ -127,6 +128,25 @@ main h2{
  }
  .viloytlar_class .viloytlar_class_h3 h3{
     margin-left: 40px;
+    background-color: #f5f8fa;
+ }
+ .viloyat12{
+    text-align: center;
+    background-color: #f5f8fa;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+ }
+ .viloyat12 div{
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* font-weight: 600; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+
  }
  /* =========section=========== */
  section{
@@ -167,7 +187,7 @@ main h2{
     height: 380px;
     border-radius: 20px;
     margin: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Kuchli va aniqlangan soya */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
 .xizmat .img_div img{
     width: 80px;
