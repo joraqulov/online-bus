@@ -11,6 +11,7 @@ body{
 }
 /* ==============header====================  */
 header{
+   /* z-index: 1; */
     top: 0;
     background-color:#97d700;
     height: 100px;
@@ -74,8 +75,39 @@ main h2{
     width: 100%;
     /* background-color: #97d700; */
 }
-.Button_class{
+.button_qayerdan{
     margin-top: 80px;
+    /* margin-left: 53px; */
+    background-color: white;
+    width: 260px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 900;
+    color: #000000af;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button_qayerga{
+   cursor: pointer;
+   margin-top: 80px;
+    /* margin-left: 53px; */
+    background-color: white;
+    width: 260px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 900;
+    color: #000000af;
+    font-size: 20px;
+}
+.button_qachon{
+   cursor: pointer;
+   margin-top: 80px;
     /* margin-left: 53px; */
     background-color: white;
     width: 260px;
@@ -105,20 +137,22 @@ main h2{
     color: white;
     font-size: 20px;
  }
- .Button_class i{
+ .button_qachon i{
     margin-left: 30px;
     font-size:19px;
     color: #18aaf2;
     cursor: pointer;
+    cursor: pointer;
  }
  .viloytlar_class{
-    width: 990px;
+    width: 760px;
     padding: 15px;
-    margin-left: 19%;
+    margin-left: 23%;
     height: 400px;
     background-color:#f5f8fa;
     /* position:absolute; */
     border-radius: 20px;
+    margin-bottom: 25px;
  }
  .viloytlar_class  .viloytlar_class_h3{
     width: 100%;
@@ -134,12 +168,16 @@ main h2{
     text-align: center;
     background-color: #f5f8fa;
     display: grid;
+    /* width: 300px; */
+    justify-content: center;
+    align-items: center;
     grid-template-columns: auto auto auto auto;
  }
  .viloyat12 div{
     background-color: #ffffff;
     margin: 10px;
     padding: 20px;
+    /* text-align: center; */
     font-size: 25px;
     cursor: pointer;
     border-radius: 10px;
@@ -213,3 +251,93 @@ main h2{
  .xizmat a{
     color: red;
  }
+ /* ===== loeder */
+.loader_wraper{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background-color: black;
+   z-index: 100;
+
+}
+ .loader {
+   z-index: 60;
+   box-sizing: border-box;
+   display: inline-block;
+   width: 50px;
+   height: 80px;
+   border-top: 5px solid #fff;
+   border-bottom: 5px solid #fff;
+   position: relative;
+   background: linear-gradient(#FF3D00 30px, transparent 0) no-repeat;
+   background-size: 2px 40px;
+   background-position: 50% 0px;
+   animation: spinx 5s linear infinite;
+ }
+ .loader:before, .loader:after {
+   content: "";
+   width: 40px;
+   left: 50%;
+   height: 35px;
+   position: absolute;
+   top: 0;
+   transform: translatex(-50%);
+   background: rgba(255, 255, 255, 0.4);
+   border-radius: 0 0 20px 20px;
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: 0 0px;
+   animation: lqt 5s linear infinite;
+ }
+ .loader:after {
+   top: auto;
+   bottom: 0;
+   border-radius: 20px 20px 0 0;
+   animation: lqb 5s linear infinite;
+ }
+ @keyframes lqt {
+   0%, 100% {
+     background-image: linear-gradient(#FF3D00 40px, transparent 0);
+     background-position: 0% 0px;
+   }
+   50% {
+     background-image: linear-gradient(#FF3D00 40px, transparent 0);
+     background-position: 0% 40px;
+   }
+   50.1% {
+     background-image: linear-gradient(#FF3D00 40px, transparent 0);
+     background-position: 0% -40px;
+   }
+ }
+ @keyframes lqb {
+   0% {
+     background-image: linear-gradient(#FF3D00 40px, transparent 0);
+     background-position: 0 40px;
+   }
+   100% {
+     background-image: linear-gradient(#FF3D00 40px, transparent 0);
+     background-position: 0 -40px;
+   }
+ }
+ @keyframes spinx {
+   0%, 49% {
+     transform: rotate(0deg);
+     background-position: 50% 36px;
+   }
+   51%, 98% {
+     transform: rotate(180deg);
+     background-position: 50% 4px;
+   }
+   100% {
+     transform: rotate(360deg);
+     background-position: 50% 36px;
+   }
+ }
+     
